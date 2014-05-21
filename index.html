@@ -1,0 +1,71 @@
+<html ng-app="spacebar">
+<head>
+  <title></title>
+  <style type="text/css">
+  /*
+   * ngRepeat triggers three animation events: enter, leave and move.
+   */
+  .repeat-animation.ng-enter,
+  .repeat-animation.ng-leave,
+  .repeat-animation.ng-move {
+    transition: margin-top 1s ease-out, opacity 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  }
+
+  /* ending enter and move styling
+     (this is what the element will animate from */
+  .repeat-animation.ng-enter,
+  .repeat-animation.ng-move {
+    transition: opacity 0.2s linear;
+    opacity:0; }
+
+  /* ending enter and move styling
+     (this is what the element will animate towards */
+  .repeat-animation.ng-enter.ng-enter-active,
+  .repeat-animation.ng-move.ng-move-active {
+    opacity:1;
+  }
+
+  /* starting leave animation */
+  .repeat-animation.ng-leave {opacity:1; margin-top: 0; }
+
+  /* ending leave animation */
+  .repeat-animation.ng-leave.ng-leave-active { opacity:0; margin-top: 150px; }
+
+body {
+  overflow: hidden;
+}
+.space {
+  width: 800px;
+  margin: 0 auto;
+}
+.center {
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+  color: #808080;
+  font-size: 2em;
+  height: 50px;
+  position: absolute;
+  top: 45%;
+  width: 700px;
+  left: 100px;
+  text-align: left;
+  opacity: 1;
+  z-index: 1;
+  vertical-align: bottom;
+}
+.center {
+}
+</style>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+</head>
+<body ng-controller="SpaceController" ng-spacebar='next()'>
+
+  <div class="space">
+    <div ng-repeat="message in messages | limitTo:1" class="repeat-animation center" style="font-size: {{message.size}}">{{message.text}}</div>
+
+  </div>
+  <script type="text/javascript" src="spacebar/spacebar.js"></script>
+  <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+
+</body>
+</html>
