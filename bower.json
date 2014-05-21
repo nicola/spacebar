@@ -1,0 +1,21 @@
+{
+  "name": "spacebar",
+  "version": "0.0.1",
+  "authors": [
+    "Nicola Greco"
+  ],
+  "license": "MIT",
+  "homepage": "http://nicolagreco.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.2.18",
+    "d3": "~3.4.9",
+    "angular": "~1.2.18"
+  }
+}
