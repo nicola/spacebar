@@ -1,7 +1,7 @@
 spacebar
 ========
 
-"Spacebar when you are ready" UI, inspired by [The quite place project][http://thequietplaceproject.com/]
+"Spacebar when you are ready" UI, inspired by [The quite place project](http://thequietplaceproject.com/)
 
 ## Install
 
