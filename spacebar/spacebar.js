@@ -8,7 +8,8 @@ angular.module("spacebar", ['ngAnimate'])
   $scope.messages.push({text:"a bit of HTML", size:40})
   $scope.messages.push({text:"and CSS transitions", size:50})
   $scope.messages.push({text:"cool no? :-)", size:25})
-  $scope.messages.push({text:"Inspired by: http://thequietplaceproject.com/", size:15, last:true})
+  $scope.messages.push({text:"Inspired by: http://thequietplaceproject.com/", size:15})
+  $scope.messages.push({text:"Follow this project on github http://github.com/nicola/spacebar", size:30, last:true})
   
   $scope.next = function() {
     $scope.messages.shift()
