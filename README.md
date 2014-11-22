@@ -1,7 +1,5 @@
 [![View](https://raw.githubusercontent.com/nicola/spacebar/master/thumbnail.png)](http://nicola.github.io/spacebar)
 
-## The idea
-
 The idea behind this experiment is to create a **new interaction** when reading a text, where the user sets the pace at which the machine will talk to him
 
 ### Demo
