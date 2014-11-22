@@ -1,6 +1,7 @@
 <html ng-app="spacebar">
 <head>
-  <title></title>
+  <title>Spacebar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.65">
   <style type="text/css">
   /*
    * ngRepeat triggers three animation events: enter, leave and move.
@@ -58,7 +59,7 @@ body {
 </style>
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
 </head>
-<body ng-controller="SpaceController" ng-spacebar='next()'>
+<body ng-controller="SpaceController" ng-spacebar='next()' ng-tap='next()'>
 
   <div class="space">
     <div ng-repeat="message in messages | limitTo:1" class="repeat-animation center" style="font-size: {{message.size}}">{{message.text}}</div>
