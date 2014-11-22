@@ -11,7 +11,7 @@ The idea behind this experiment is to create a **new interaction** when reading 
 
 The demo here shows an example test: [http://nicola.github.io/spacebar](http://nicola.github.io/spacebar)
 
-[![View](https://raw.githubusercontent.com/nicola/spacebar/thumbnail.png)](http://nicola.github.io/spacebar)
+[![View](https://raw.githubusercontent.com/nicola/spacebar/master/thumbnail.png)](http://nicola.github.io/spacebar)
 
 ### Used
 
